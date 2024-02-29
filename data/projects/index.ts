@@ -14,12 +14,11 @@ export type Project = {
 };
 
 export const loadProjects = async function* () {
-  // Use fake data in development
-  if (!isProduction()) {
-    yield* fakes;
-    return;
-  }
+  // Use fake data
+  yield* fakes;
+};
+
 
   // You may need to replace this part with your own logic
   // as getGitHubRepos and getGitHubDownloads are removed
-};
+
