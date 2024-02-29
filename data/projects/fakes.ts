@@ -19,6 +19,15 @@ const fakes: Project[] = [
     downloads: 100,
     language: 'Dart'
   },
+  {
+    name: 'Company Website',
+    url: 'https://galaxyconcepts.org',
+    archived: false,
+    description: 'A website built for a construction company.',
+    stars: 1,
+    downloads: 0,
+    language: 'SCSS'
+  },
   
 ];
 
