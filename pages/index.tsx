@@ -5,7 +5,7 @@ import Heading from '~/components/heading';
 import Image from '~/components/image';
 import Link from '~/components/link';
 import Paragraph from '~/components/paragraph';
-import UkraineAlert from '~/components/jokeAlert';
+import JokeAlert from '~/components/jokeAlert';
 
 const HomePage: NextPage = () => {
   const age = new Date(Date.now() - Date.parse('1999-07-07')).getUTCFullYear() - 1970;
@@ -52,7 +52,7 @@ const HomePage: NextPage = () => {
       </section>
 
       <section className={c('my-2')}>
-        <UkraineAlert />
+        <JokeAlert />
       </section>
 
       <div className={c('my-8', 'h-1', 'rounded', 'bg-purple-500')} />

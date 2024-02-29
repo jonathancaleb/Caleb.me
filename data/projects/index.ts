@@ -1,5 +1,4 @@
 import fakes from '~/data/projects/fakes';
-import { getGitHubDownloads, getGitHubRepos } from '~/data/projects/github';
 import { getNuGetDownloads } from '~/data/projects/nuget';
 import { isProduction } from '~/utils/env';
 
@@ -21,27 +20,6 @@ export const loadProjects = async function* () {
     return;
   }
 
-  for (const repo of await getGitHubRepos()) {
-    if (!repo.stargazers_count || repo.stargazers_count < 35) {
-      continue;
-    }
-
-    const downloads = [
-      await getGitHubDownloads(repo.name),
-      await getNuGetDownloads(repo.name)
-    ].reduce((acc, cur) => acc + cur, 0);
-
-    const project: Project = {
-      name: repo.name,
-      url: repo.html_url,
-      archived: repo.archived || false,
-      description: repo.description || undefined,
-      homepageUrl: repo.homepage || undefined,
-      stars: repo.stargazers_count || 0,
-      downloads,
-      language: repo.language || undefined
-    };
-
-    yield project;
-  }
+  // You may need to replace this part with your own logic
+  // as getGitHubRepos and getGitHubDownloads are removed
 };
