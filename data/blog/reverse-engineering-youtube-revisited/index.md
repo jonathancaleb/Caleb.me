@@ -453,4 +453,4 @@ In general, the required steps to download a YouTube video can be outlined as fo
 4. Download the stream in chunks using the `Range` HTTP header
 5. If needed, use FFmpeg to mux multiple streams into a single file
 
-If you have any questions or just want a more in-depth look at how all the pieces fit together, feel free to go through [YoutubeExplode's source code on GitHub](https://github.com/Tyrrrz/YoutubeExplode). It's fairly well-documented and should be a decent reference point for anyone interested in building their own YouTube downloader.
+If you have any questions or just want a more in-depth look at how all the pieces fit together, feel free to go through [YoutubeExplode's source code on GitHub](https://github.com/). It's fairly well-documented and should be a decent reference point for anyone interested in building their own YouTube downloader.
