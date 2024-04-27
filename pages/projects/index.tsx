@@ -24,7 +24,7 @@ const ProjectsPage: NextPage<ProjectsPageProps> = ({ projects }) => {
 
         <Paragraph>
           These are projects that I&apos;ve built. Most of these started out of
-          personal necessity. Others are projects used by clients.
+          personal necessity and learning points.
         </Paragraph>
       </section>
 
