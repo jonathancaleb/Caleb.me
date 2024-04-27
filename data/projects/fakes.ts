@@ -2,6 +2,25 @@ import { Project } from '~/data/projects';
 
 const fakes: Project[] = [
   {
+    name: 'Personal Website',
+    url: 'https://github.com/jonathancaleb/Caleb.me',
+    archived: false,
+    description: 'A personal webapp built using react, next, firebase..',
+    stars: 4,
+    downloads: 2,
+    language: 'Next js'
+  },
+  {
+    name: 'Resume Builder',
+    url: 'https://workfolio-ten.vercel.app/',
+    archived: false,
+    description: 'A resume builder built using typescript',
+    stars: 4,
+    downloads: 2,
+    language: 'Next js'
+  },
+  
+  {
     name: 'Job App',
     url: 'https://play.google.com/store/apps/details?id=oss.avsi.connect',
     archived: false,
