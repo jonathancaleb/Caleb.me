@@ -1,5 +1,5 @@
 ---
-title: 'Craft Confidence in Your Code: Mastering Unit Testing with Python's `unittest` Module'
+title: 'Testing with Python's unit test Module'
 date: '2024-02-11'
 ---
 
