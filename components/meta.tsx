@@ -20,7 +20,7 @@ const Meta: FC<MetaProps> = ({ title, description, keywords, imageUrl, imageLayo
 
   const actualDescription =
     description ||
-    'Caleb Jonathan (@tyrrrz) is a software developer';
+    'Caleb Jonathan (@caleb) is a software developer';
 
   const actualKeywords = keywords?.join(',') || '';
 
@@ -52,8 +52,8 @@ const Meta: FC<MetaProps> = ({ title, description, keywords, imageUrl, imageLayo
       <meta key="og:image" property="og:image" content={actualImageUrl} />
 
       <meta key="twitter:title" name="twitter:title" content={actualTitle} />
-      <meta key="twitter:site" name="twitter:site" content="@Tyrrrz" />
-      <meta key="twitter:creator" name="twitter:creator" content="@Tyrrrz" />
+      <meta key="twitter:site" name="twitter:site" content="@caleb" />
+      <meta key="twitter:creator" name="twitter:creator" content="@caleb" />
       <meta
         key="twitter:card"
         name="twitter:card"

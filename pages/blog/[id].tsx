@@ -72,7 +72,7 @@ const SubscribeSection: FC = () => {
 
       <div>
         Want to know when I post a new article? Follow me on{' '}
-        <Link href="https://twitter.com/Tyrrrz">Twitter</Link> or subscribe to the{' '}
+        <Link href="https://twitter.com/caleb">Twitter</Link> or subscribe to the{' '}
         <Link href="/blog/rss.xml" external>
           RSS Feed
         </Link>
@@ -87,7 +87,7 @@ const CommentSection: FC<BlogPostPageProps> = ({ post }) => {
   return (
     <section>
       <Giscus
-        repo="Tyrrrz/Tyrrrz.me"
+        repo="caleb/caleb.me"
         repoId="MDEwOlJlcG9zaXRvcnkyMDY0MDIxMDc="
         category="Blog"
         categoryId="DIC_kwDODE1yO84CT-_a"
