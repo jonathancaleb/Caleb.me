@@ -11,6 +11,15 @@ const fakes: Project[] = [
     language: 'Next js'
   },
   {
+    name: 'PDF Reader',
+    url: 'https://github.com/jonathancaleb/PDFRipper',
+    archived: false,
+    description: 'Python program to automatically extract text from a pdf documnet',
+    stars: 2,
+    downloads: 0,
+    language: 'Python'
+  },
+  {
     name: 'Resume Builder',
     url: 'https://workfolio-ten.vercel.app/',
     archived: false,
