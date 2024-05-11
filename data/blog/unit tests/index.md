@@ -1,7 +1,6 @@
 ---
-title: Craft Confidence in Your Code: Mastering Unit Testing with Python's `unittest` Module
-date: 2024-02-11
-author: caleb
+title: 'Craft Confidence in Your Code: Mastering Unit Testing with Python's `unittest` Module'
+date: '2024-02-11'
 ---
 
 **Introduction: The Bedrock of Reliable Python Code**
