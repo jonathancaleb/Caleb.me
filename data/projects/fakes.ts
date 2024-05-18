@@ -56,6 +56,15 @@ const fakes: Project[] = [
     downloads: 0,
     language: 'SCSS'
   },
+  {
+    name: 'Ecommerce webapp',
+    url: 'https://e-comm-zeta.vercel.app/',
+    archived: false,
+    description: 'A webapp built using angular for learning purposes.',
+    stars: 6,
+    downloads: 0,
+    language: 'Angular'
+  },
   
 ];
 
