@@ -1,15 +1,15 @@
 import Head from 'next/head';
-import { FC } from 'react';
+import type { FC } from 'react';
 import { getBuildId, getSiteUrl } from '~/utils/env';
 
-type MetaProps = {
+interface MetaProps {
   title?: string;
   description?: string;
   keywords?: string[];
   imageUrl?: string;
   imageLayout?: 'aside' | 'fill';
   rssUrl?: string;
-};
+}
 
 const Meta: FC<MetaProps> = ({ title, description, keywords, imageUrl, imageLayout, rssUrl }) => {
   const siteName = 'Caleb Jonathan';
@@ -18,13 +18,13 @@ const Meta: FC<MetaProps> = ({ title, description, keywords, imageUrl, imageLayo
 
   const actualTitle = title ? title + ' • ' + siteName : siteName;
 
-  const actualDescription = description || 'Caleb Jonathan (@caleb) is a software developer';
+  const actualDescription = description ?? 'Caleb Jonathan (@caleb) is a software developer';
 
-  const actualKeywords = keywords?.join(',') || '';
+  const actualKeywords = keywords?.join(',') ?? '';
 
-  const actualImageUrl = getSiteUrl(imageUrl || '/1.jpg');
+  const actualImageUrl = getSiteUrl(imageUrl ?? '/1.jpg');
 
-  const actualImageLayout = imageLayout || 'aside';
+  const actualImageLayout = imageLayout ?? 'aside';
 
   const actualRssUrl = rssUrl && getSiteUrl(rssUrl);
 

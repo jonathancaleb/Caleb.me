@@ -1,5 +1,5 @@
+import type { FC, PropsWithChildren } from 'react';
 import c from 'classnames';
-import { FC, PropsWithChildren } from 'react';
 
 type CodeProps = PropsWithChildren;
 

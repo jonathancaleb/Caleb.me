@@ -1,18 +1,19 @@
 import c from 'classnames';
-import { GetStaticProps, NextPage } from 'next';
-import { FiArchive, FiCode, FiDownload, FiExternalLink, FiStar } from 'react-icons/fi';
+import type { GetStaticProps, NextPage } from 'next';
+import { FiArchive, FiCode, FiExternalLink, FiGithub, FiStar } from 'react-icons/fi';
 import Heading from '~/components/heading';
 import Inline from '~/components/inline';
 import Link from '~/components/link';
 import Meta from '~/components/meta';
 import Paragraph from '~/components/paragraph';
-import { Project, loadProjects } from '~/data/projects';
+import type { Project} from '~/data/projects';
+import { loadProjects } from '~/data/projects';
 import { bufferIterable } from '~/utils/async';
 import { deleteUndefined } from '~/utils/object';
 
-type ProjectsPageProps = {
+interface ProjectsPageProps {
   projects: Project[];
-};
+}
 
 const ProjectsPage: NextPage<ProjectsPageProps> = ({ projects }) => {
   return (
@@ -23,8 +24,8 @@ const ProjectsPage: NextPage<ProjectsPageProps> = ({ projects }) => {
         <Heading>Projects</Heading>
 
         <Paragraph>
-          These are projects that I&apos;ve built. Most of these started out of personal necessity
-          and learning points.
+          These are the open-source projects that I&apos;ve built. Most of these started out of
+          personal necessity.
         </Paragraph>
       </section>
 
@@ -95,12 +96,12 @@ const ProjectsPage: NextPage<ProjectsPageProps> = ({ projects }) => {
                 </Inline>
               )}
 
-              {project.downloads > 0 && (
-                <Inline>
-                  <FiDownload strokeWidth={1} />
-                  <div>{project.downloads.toLocaleString('en-US')}</div>
-                </Inline>
-              )}
+            <div className={c('text-lg', 'text-ellipsis', 'overflow-hidden')}>
+              <Link href={project.githubUrl} aria-label={`${project.name} GitHub Link`}>
+                <FiGithub className="inline text-black" size={20} strokeWidth={1.5} />
+              </Link>
+            </div>
+
             </div>
           </section>
         ))}

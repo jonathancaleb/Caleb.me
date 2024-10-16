@@ -1,5 +1,5 @@
 import c from 'classnames';
-import { FC } from 'react';
+import type { FC } from 'react';
 import Link from '~/components/link';
 
 const JokeAlert: FC = () => {

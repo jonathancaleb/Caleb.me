@@ -1,8 +1,6 @@
 import fakes from '~/data/projects/fakes';
-import { getNuGetDownloads } from '~/data/projects/nuget';
-import { isProduction } from '~/utils/env';
 
-export type Project = {
+export interface Project {
   name: string;
   url: string;
   archived: boolean;
@@ -11,11 +9,15 @@ export type Project = {
   stars: number;
   downloads: number;
   language?: string;
-};
+  githubUrl: string;
+}
 
 export const loadProjects = async function* () {
   // Use fake data
-  yield* fakes;
+  for (const project of fakes) {
+    await new Promise(resolve => setTimeout(resolve, 0));
+    yield project;
+  }
 };
 
 // You may need to replace this part with your own logic
