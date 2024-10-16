@@ -1,4 +1,4 @@
-/** @type {import('@ianvs/prettier-plugin-sort-imports').PrettierConfig} */
+
 const config = {
   semi: true,
   singleQuote: true,
@@ -7,7 +7,7 @@ const config = {
   plugins: [
     '@ianvs/prettier-plugin-sort-imports',
     'prettier-plugin-packagejson',
-    'prettier-plugin-curly'
+    'prettier-plugin-curly',
   ],
   importOrder: [
     '',
@@ -26,9 +26,9 @@ const config = {
     '^[./]',
     '',
     '^(?!.*[.]css$)[./].*$',
-    '.css$'
+    '.css$',
   ],
-  importOrderTypeScriptVersion: '5.4.5'
+  importOrderTypeScriptVersion: '5.4.5',
 };
 
 export default config;

@@ -1,10 +1,6 @@
 import c from 'classnames';
 import { NextPage } from 'next';
-import Code from '~/components/code';
 import Heading from '~/components/heading';
-import Link from '~/components/link';
-import List from '~/components/list';
-import ListItem from '~/components/listItem';
 import Meta from '~/components/meta';
 import Paragraph from '~/components/paragraph';
 

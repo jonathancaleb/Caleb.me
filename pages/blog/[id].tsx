@@ -118,7 +118,7 @@ const BlogPostPage: NextPage<BlogPostPageProps> = ({ post }) => {
         title={post.title}
         description={post.excerpt}
         imageLayout={post.coverUrl ? 'fill' : 'aside'}
-        imageUrl={post.coverUrl}
+        imageUrl={post.coverUrl || ''} // Fallback to an empty string
         rssUrl="/blog/rss.xml"
       />
 

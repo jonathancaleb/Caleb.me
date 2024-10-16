@@ -23,51 +23,46 @@ const Markdown: FC<MarkdownProps> = ({ source, transformUrl }) => {
       urlTransform={transformUrl}
       components={{
         h1: ({ node, children }) => {
-          const id =
-            node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
+          const id = node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
 
           return (
-            <Heading id={id} level={1}>
+            <Heading {...(id ? { id } : {})} level={1}>
               {children}
             </Heading>
           );
         },
         h2: ({ node, children }) => {
-          const id =
-            node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
+          const id = node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
 
           return (
-            <Heading id={id} level={2}>
+            <Heading {...(id ? { id } : {})} level={2}>
               {children}
             </Heading>
           );
         },
         h3: ({ node, children }) => {
-          const id =
-            node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
+          const id = node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
 
           return (
-            <Heading id={id} level={3}>
+            <Heading {...(id ? { id } : {})} level={3}>
               {children}
             </Heading>
           );
         },
         h4: ({ node, children }) => {
-          const id =
-            node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
+          const id = node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
 
           return (
-            <Heading id={id} level={4}>
+            <Heading {...(id ? { id } : {})} level={4}>
               {children}
             </Heading>
           );
         },
         h5: ({ node, children }) => {
-          const id =
-            node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
+          const id = node?.children?.[0]?.type === 'text' ? slugify(node.children[0].value) : undefined;
 
           return (
-            <Heading id={id} level={5}>
+            <Heading {...(id ? { id } : {})} level={5}>
               {children}
             </Heading>
           );
@@ -89,7 +84,7 @@ const Markdown: FC<MarkdownProps> = ({ source, transformUrl }) => {
         },
         ol: ({ start, children }) => {
           return (
-            <List variant="ordered" start={start}>
+            <List variant="ordered" {...(start !== undefined ? { start } : {})}>
               {children}
             </List>
           );
@@ -115,11 +110,11 @@ const Markdown: FC<MarkdownProps> = ({ source, transformUrl }) => {
             const source = node.children[0].children[0].value;
 
             const className =
-              typeof node.children[0].properties?.className === 'object'
-                ? node.children[0].properties.className?.join(' ')
-                : String(node.children[0].properties?.className);
+              typeof node.children[0].properties?.['className'] === 'object'
+                ? node.children[0].properties['className']?.join(' ')
+                : String(node.children[0].properties?.['className']);
 
-            const language = className && /language-(\w+)/iu.exec(className)?.[1];
+            const language = className && /language-(\w+)/i.exec(className)?.[1];
 
             if (language) {
               return <Syntax source={source} language={language} />;

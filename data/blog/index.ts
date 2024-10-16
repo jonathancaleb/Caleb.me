@@ -12,7 +12,7 @@ export type BlogPost = {
   title: string;
   date: string;
   readingTimeMins: number;
-  coverUrl?: string;
+  coverUrl?: string | undefined;
   excerpt: string;
   source: string;
 };
