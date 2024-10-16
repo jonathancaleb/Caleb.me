@@ -21,17 +21,14 @@ const JokePage: NextPage = () => {
           <div className={c('h-10', 'bg-gray-200')} />
         </div>
 
-
-        <Paragraph> Dang it, I broke myself! But no worries—I am undergoing repair. Be back soon. 😄🤖 </Paragraph>
-
+        <Paragraph>
+          {' '}
+          Dang it, I broke myself! But no worries—I am undergoing repair. Be back soon. 😄🤖{' '}
+        </Paragraph>
       </section>
 
-      
-
-      
-
       <div className={c('my-6', 'text-xl', 'text-center', 'font-light')}>
-      Glory to Algorithms! Glory to Debuggers!
+        Glory to Algorithms! Glory to Debuggers!
       </div>
     </>
   );

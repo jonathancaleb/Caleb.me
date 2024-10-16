@@ -23,8 +23,8 @@ const ProjectsPage: NextPage<ProjectsPageProps> = ({ projects }) => {
         <Heading>Projects</Heading>
 
         <Paragraph>
-          These are projects that I&apos;ve built. Most of these started out of
-          personal necessity and learning points.
+          These are projects that I&apos;ve built. Most of these started out of personal necessity
+          and learning points.
         </Paragraph>
       </section>
 

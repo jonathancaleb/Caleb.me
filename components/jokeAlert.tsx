@@ -22,9 +22,7 @@ const JokeAlert: FC = () => {
     >
       <div className={c('font-semibold')}>👩‍💻 Code Hard, Nap Harder, Dream in Binary</div>
 
-      <div>
-      Because even our subconscious runs on zeros and ones. 😄🌙💤
-      </div>
+      <div>Because even our subconscious runs on zeros and ones. 😄🌙💤</div>
 
       <div className={c('font-semibold')}>
         <Link href="/joke">Interact with my joke bot</Link>

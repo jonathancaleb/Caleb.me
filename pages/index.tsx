@@ -34,19 +34,20 @@ const HomePage: NextPage = () => {
             <Heading>👋 Hello!</Heading>
           </div>
           <Paragraph>
-            My name is Caleb. I&apos;m a {age}-year-old software
-            developer from Kampala, Uganda.
+            My name is Caleb. I&apos;m a {age}-year-old software developer from Kampala, Uganda.
           </Paragraph>
           <Paragraph>
-          As a software developer working in a consultancy firm, I focus on developer tooling and infrastructure. 
-          My interests span mobile apps, distributed systems, and web applications. 
-          I thrive on seeking creative solutions to complex problems, building tools that empower others.
+            As a software developer working in a consultancy firm, I focus on developer tooling and
+            infrastructure. My interests span mobile apps, distributed systems, and web
+            applications. I thrive on seeking creative solutions to complex problems, building tools
+            that empower others.
           </Paragraph>
           <Paragraph>
-            I&apos;m also an active member of the developer community, at {' '}
-            <Link href={githubStarUrl}>GitHub</Link> and {' '} — I spend most of my free time
-            building my side<Link href="/projects"> projects</Link>, speaking
-            at select <Link href="/speaking">technical conferences</Link>, or exploring my writing skills on <Link href="/blog">my blog</Link>.
+            I&apos;m also an active member of the developer community, at{' '}
+            <Link href={githubStarUrl}>GitHub</Link> and — I spend most of my free time building my
+            side<Link href="/projects"> projects</Link>, speaking at select{' '}
+            <Link href="/speaking">technical conferences</Link>, or exploring my writing skills on{' '}
+            <Link href="/blog">my blog</Link>.
           </Paragraph>
         </div>
       </section>

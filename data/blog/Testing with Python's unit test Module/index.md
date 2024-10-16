@@ -1,5 +1,5 @@
 ---
-title: 'Testing with Python's unit test Module'
+title: "Testing with Python's unit test Module"
 date: '2024-02-11'
 ---
 
@@ -29,9 +29,10 @@ class TestMyMathFunctions(unittest.TestCase):
     # Your test methods will go here
 
 ```
-## 2. Craft Test Methods:
 
-Each test method within your test case focuses on verifying a specific aspect of a unit's behavior. Their names typically begin with test_ for easy identification.
+## 2. Craft Test Methods
+
+Each test method within your test case focuses on verifying a specific aspect of a unit's behavior. Their names typically begin with test\_ for easy identification.
 
 ```python
 def test_addition(self):
@@ -41,7 +42,7 @@ def test_addition(self):
     self.assertEqual(result, 8, "add function should return the sum of arguments")
 ```
 
-## 3. Leverage unittest Assertions:
+## 3. Leverage unittest Assertions
 
 The unittest module equips you with powerful assertion methods to validate the expected outcomes of your tests:
 
@@ -51,7 +52,7 @@ self.assertFalse(expression): Ensures that a Boolean expression evaluates to Fal
 self.assertIsNone(value): Guarantees that a value is None.
 self.assertIs(obj1, obj2): Affirms that two objects (obj1 and obj2) are identical (using the is operator).
 
-## 4. Run Your Tests:
+## 4. Run Your Tests
 
 Once you've crafted your test cases and methods, execute them using the unittest.main() function. This function orchestrates the test runner, evaluating your tests and providing results.
 
@@ -62,7 +63,7 @@ if __name__ == '__main__':
 
 Beyond the Basics: Taming Diverse Conditions
 
-Remember, robust unit testing involves testing your code under various scenarios.  Here are some techniques to handle diverse conditions:
+Remember, robust unit testing involves testing your code under various scenarios. Here are some techniques to handle diverse conditions:
 
 Testing for Exceptions: Use self.assertRaises to assert that a function raises a specific exception when invoked with unexpected input.
 Mocking External Dependencies: Utilize libraries like mock to isolate units and mock external dependencies, focusing on the core logic you're testing.

@@ -101,8 +101,8 @@ const CommentSection: FC<BlogPostPageProps> = ({ post }) => {
           userPreferredTheme === 'dark'
             ? 'dark'
             : userPreferredTheme === 'light'
-            ? 'light'
-            : 'preferred_color_scheme'
+              ? 'light'
+              : 'preferred_color_scheme'
         }
         lang="en"
         loading="lazy"

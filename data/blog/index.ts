@@ -111,8 +111,7 @@ export const publishBlogFeed = async () => {
   const feed = new Feed({
     id: getSiteUrl(),
     title: "Caleb Jonathan's Blog",
-    description:
-      'Caleb Jonathan (@caleb) is a software developer',
+    description: 'Caleb Jonathan (@caleb) is a software developer',
     link: getSiteUrl('/blog'),
     image: getSiteUrl('/logo.png'),
     copyright: `Copyright (c) 2015-${date.getFullYear()} Caleb Jonathan`,

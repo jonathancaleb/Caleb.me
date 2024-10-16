@@ -18,7 +18,7 @@ const engagements: SpeakingEngagement[] = [
     language: 'english',
     eventUrl: 'https://facebook.com/Lifeat3shape',
     presentationUrl:
-      'https://slideshare.net/CalebSabila/caleb-sabila-writing-parsers-in-c-3shape-meetup',
+      'https://slideshare.net/CalebSabila/caleb-sabila-writing-parsers-in-c-3shape-meetup'
   },
   // ... (omit remaining entries for brevity)
   {
@@ -30,8 +30,8 @@ const engagements: SpeakingEngagement[] = [
     eventUrl: 'https://flutter.com',
     presentationUrl:
       'https://slideshare.net/CalebSabila/realitydriven-testing-using-testcontainers',
-    recordingUrl: 'https://youtube.com/',
-  },
+    recordingUrl: 'https://youtube.com/'
+  }
 ];
 
 // This doesn't need to be an async iterator, but I wanted it to be consistent

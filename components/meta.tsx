@@ -18,9 +18,7 @@ const Meta: FC<MetaProps> = ({ title, description, keywords, imageUrl, imageLayo
 
   const actualTitle = title ? title + ' • ' + siteName : siteName;
 
-  const actualDescription =
-    description ||
-    'Caleb Jonathan (@caleb) is a software developer';
+  const actualDescription = description || 'Caleb Jonathan (@caleb) is a software developer';
 
   const actualKeywords = keywords?.join(',') || '';
 

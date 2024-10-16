@@ -18,7 +18,5 @@ export const loadProjects = async function* () {
   yield* fakes;
 };
 
-
-  // You may need to replace this part with your own logic
-  // as getGitHubRepos and getGitHubDownloads are removed
-
+// You may need to replace this part with your own logic
+// as getGitHubRepos and getGitHubDownloads are removed
