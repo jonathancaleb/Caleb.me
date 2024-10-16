@@ -4,7 +4,6 @@
     "private": true,
     "scripts": {
       "start": "next dev",
-      "build": "next build",
       "serve": "next start"
     },
     "commitlint": {
