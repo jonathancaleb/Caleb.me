@@ -47,7 +47,8 @@ const HomePage: NextPage = () => {
             <Link href={githubStarUrl}>GitHub</Link> and — I spend most of my free time building my
             side<Link href="/projects"> projects</Link>, speaking at select{' '}
             <Link href="/speaking">technical conferences</Link>, or exploring my writing skills on{' '}
-            <Link href="/blog">my blog</Link>.
+            <Link href="/blog">my blog</Link>. Feel free to reach out to me anytime at{' '}
+            <Link href="mailto:jonathancaleb230@gmail.com">jonathancaleb230@gmail.com</Link>.
           </Paragraph>
         </div>
       </section>
