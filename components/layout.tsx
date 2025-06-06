@@ -2,7 +2,6 @@ import { Analytics } from '@vercel/analytics/react';
 import c from 'classnames';
 import { useRouter } from 'next/router';
 import { FC, PropsWithChildren, useEffect, useMemo, useState } from 'react';
-import FadeIn from 'react-fade-in';
 import { FiMenu, FiMoon, FiSun } from 'react-icons/fi';
 import Link from '~/components/link';
 import Meta from '~/components/meta';
@@ -197,7 +196,15 @@ const Main: FC<PropsWithChildren> = ({ children }) => {
 
   return (
     <main className={c('mx-4', 'mt-6', 'mb-20')}>
-      <FadeIn key={fadeKey}>{children}</FadeIn>
+      <div 
+        key={fadeKey} 
+        className="animate-[fadeIn_0.3s_ease-in-out]"
+        style={{
+          animation: 'fadeIn 0.3s ease-in-out'
+        }}
+      >
+        {children}
+      </div>
     </main>
   );
 };
